@@ -32,9 +32,6 @@ import java.util.List;
 import java.util.Map;
 import java.util.Map.Entry;
 
-import javax.servlet.http.HttpServletRequest;
-import javax.servlet.http.HttpServletResponse;
-
 import org.apache.olingo.commons.api.ex.ODataRuntimeException;
 import org.apache.olingo.commons.api.http.HttpHeader;
 import org.apache.olingo.commons.api.http.HttpMethod;
@@ -53,6 +50,9 @@ import org.apache.olingo.server.api.etag.CustomETagSupport;
 import org.apache.olingo.server.api.processor.Processor;
 import org.apache.olingo.server.api.serializer.CustomContentTypeSupport;
 import org.apache.olingo.server.core.debug.ServerCoreDebugger;
+
+import jakarta.servlet.http.HttpServletRequest;
+import jakarta.servlet.http.HttpServletResponse;
 
 public class ODataHttpHandlerImpl implements ODataHttpHandler {
 

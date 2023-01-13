@@ -23,12 +23,6 @@ import java.net.URI;
 import java.util.Collections;
 import java.util.UUID;
 
-import javax.servlet.ServletException;
-import javax.servlet.http.HttpServlet;
-import javax.servlet.http.HttpServletRequest;
-import javax.servlet.http.HttpServletResponse;
-import javax.servlet.http.HttpSession;
-
 import org.apache.olingo.commons.api.edmx.EdmxReference;
 import org.apache.olingo.commons.api.edmx.EdmxReferenceInclude;
 import org.apache.olingo.server.api.OData;
@@ -43,6 +37,12 @@ import org.apache.olingo.server.tecsvc.processor.TechnicalPrimitiveComplexProces
 import org.apache.olingo.server.tecsvc.provider.EdmTechProvider;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+
+import jakarta.servlet.ServletException;
+import jakarta.servlet.http.HttpServlet;
+import jakarta.servlet.http.HttpServletRequest;
+import jakarta.servlet.http.HttpServletResponse;
+import jakarta.servlet.http.HttpSession;
 
 public class TechnicalServlet extends HttpServlet {
 

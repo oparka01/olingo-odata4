@@ -20,9 +20,6 @@ package org.apache.olingo.server.core;
 
 import java.io.IOException;
 
-import javax.servlet.http.HttpServletRequest;
-import javax.servlet.http.HttpServletResponse;
-
 import org.apache.olingo.commons.api.edm.constants.ODataServiceVersion;
 import org.apache.olingo.commons.api.format.ContentType;
 import org.apache.olingo.commons.api.http.HttpHeader;
@@ -35,6 +32,9 @@ import org.apache.olingo.server.api.processor.Processor;
 import org.apache.olingo.server.api.serializer.CustomContentTypeSupport;
 import org.apache.olingo.server.api.serializer.SerializerException;
 import org.apache.olingo.server.core.legacy.ProcessorServiceHandler;
+
+import jakarta.servlet.http.HttpServletRequest;
+import jakarta.servlet.http.HttpServletResponse;
 
 public class OData4HttpHandler extends ODataHttpHandlerImpl {
   private ServiceHandler handler;

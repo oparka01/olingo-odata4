@@ -23,8 +23,6 @@ import java.util.Iterator;
 import java.util.ListIterator;
 import java.util.Locale;
 
-import javax.xml.bind.DatatypeConverter;
-
 import org.apache.olingo.commons.api.data.Entity;
 import org.apache.olingo.commons.api.data.EntityCollection;
 import org.apache.olingo.commons.api.data.Property;
@@ -35,6 +33,8 @@ import org.apache.olingo.server.api.uri.queryoption.search.SearchBinary;
 import org.apache.olingo.server.api.uri.queryoption.search.SearchBinaryOperatorKind;
 import org.apache.olingo.server.api.uri.queryoption.search.SearchExpression;
 import org.apache.olingo.server.api.uri.queryoption.search.SearchTerm;
+
+import jakarta.xml.bind.DatatypeConverter;
 
 public class SearchHandler {
 

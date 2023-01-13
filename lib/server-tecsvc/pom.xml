@@ -30,7 +30,7 @@
   <parent>
     <groupId>org.apache.olingo</groupId>
     <artifactId>odata-lib</artifactId>
-    <version>4.9.0</version>
+    <version>4.9.0.jakarta</version>
     <relativePath>..</relativePath>
   </parent>
 
@@ -117,9 +117,8 @@
 
   <dependencies>
     <dependency>
-      <groupId>javax.servlet</groupId>
-      <artifactId>servlet-api</artifactId>
-      <version>2.5</version>
+       <groupId>jakarta.servlet</groupId>
+       <artifactId>jakarta.servlet-api</artifactId>
       <scope>provided</scope>
     </dependency>
 
@@ -169,6 +168,15 @@
       <groupId>commons-io</groupId>
       <artifactId>commons-io</artifactId>
     </dependency>
+    <dependency>
+	  <groupId>jakarta.xml.bind</groupId>
+	  <artifactId>jakarta.xml.bind-api</artifactId>
+	</dependency>
+    <dependency>
+      <groupId>com.sun.xml.bind</groupId>
+	  <artifactId>jaxb-impl</artifactId>
+	  <scope>runtime</scope>
+	</dependency>
   </dependencies>
 
 </project>

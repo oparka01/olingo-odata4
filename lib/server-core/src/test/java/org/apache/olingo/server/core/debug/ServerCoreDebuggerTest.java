@@ -30,8 +30,6 @@ import static org.mockito.Mockito.when;
 
 import java.io.IOException;
 
-import javax.servlet.http.HttpServletRequest;
-
 import org.apache.commons.io.IOUtils;
 import org.apache.olingo.commons.api.ex.ODataRuntimeException;
 import org.apache.olingo.commons.api.http.HttpStatusCode;
@@ -42,6 +40,8 @@ import org.apache.olingo.server.api.debug.DebugSupport;
 import org.apache.olingo.server.api.debug.DefaultDebugSupport;
 import org.junit.Before;
 import org.junit.Test;
+
+import jakarta.servlet.http.HttpServletRequest;
 
 public class ServerCoreDebuggerTest {
 

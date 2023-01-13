@@ -30,7 +30,7 @@
   <parent>
     <groupId>org.apache.olingo</groupId>
     <artifactId>odata-lib</artifactId>
-    <version>4.9.0</version>
+    <version>4.9.0.jakarta</version>
     <relativePath>..</relativePath>
   </parent>
   <dependencies>
@@ -50,9 +50,8 @@
       <version>${project.version}</version>
     </dependency>
     <dependency>
-      <groupId>javax.servlet</groupId>
-      <artifactId>javax.servlet-api</artifactId>
-      <version>3.0.1</version>
+       <groupId>jakarta.servlet</groupId>
+       <artifactId>jakarta.servlet-api</artifactId>
       <scope>provided</scope>
     </dependency>
     <dependency>

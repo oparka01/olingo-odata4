@@ -27,10 +27,6 @@ import java.io.FileReader;
 import java.io.IOException;
 import java.net.URI;
 
-import javax.servlet.http.HttpServlet;
-import javax.servlet.http.HttpServletRequest;
-import javax.servlet.http.HttpServletResponse;
-
 import org.apache.catalina.Context;
 import org.apache.catalina.startup.Tomcat;
 import org.apache.http.HttpHost;
@@ -63,6 +59,10 @@ import org.apache.olingo.server.core.responses.StreamResponse;
 import org.junit.Test;
 import org.mockito.ArgumentCaptor;
 import org.mockito.Mockito;
+
+import jakarta.servlet.http.HttpServlet;
+import jakarta.servlet.http.HttpServletRequest;
+import jakarta.servlet.http.HttpServletResponse;
 
 public class ServiceDispatcherTest {
   private static final int TOMCAT_PORT = 9900;
